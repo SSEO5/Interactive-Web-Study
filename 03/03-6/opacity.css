@@ -3,6 +3,9 @@
 
 @charset "utf-8";
 
+/* opacity - 요소의 투명도 설정하기 */
+/* 0~1 */
+
 .wrap {
 	width: 400px;
 	height: 400px;
