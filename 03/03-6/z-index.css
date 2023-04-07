@@ -1,0 +1,28 @@
+/* z-index - 겹쳐 있는 요소의 z축 순서 지정하기 */
+/* 값이 큰 요소가 위로 올라감 */
+.wrap {
+	width: 400px;
+	height: 400px;
+	border: 1px solid #000;
+	margin: 100px auto;
+	position: relative;
+}
+
+.wrap .left {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 2;
+}
+.wrap .right {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	z-index: 1;
+}

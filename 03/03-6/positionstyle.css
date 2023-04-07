@@ -1,0 +1,64 @@
+/* position - 요소를 자유롭게 배치하기 */
+/* relative: 적용된 요소의 현재 위칫값을 기준으로 상대 위치 지정 */
+/* absolute: 부모 요소의 특정 구간을 기준으로 절대 위치 지정 */
+/* fixed: 웹 브라우저를 기준으로 절대 위치 지정 */
+section {
+	width: 600px;
+	height: 200px;
+}
+section {
+	width: 600px;
+	height: 200px;
+}
+section:nth-of-type(1) {
+	background-color: pink;
+}
+section:nth-of-type(2) {
+	background-color: lightblue;
+	position: relative;
+	top: -100px;
+	left: 100px;
+}
+
+.wrap {
+	width: 800px;
+	border: 5px solid black;
+	margin: 50px auto;
+}
+
+.wrap::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.wrap .left {
+	width: 400px;
+	height: 400px;
+	background-color: lightgreen;
+	float: left;
+}
+
+.wrap .right {
+	width: 400px;
+	height: 400px;
+	background-color: lightblue;
+	float: left;
+	position: relative;
+}
+
+.wrap .right .box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+}
+
+.wrap .bottom {
+	width: 800px;
+	height: 100px;
+	background-color: pink;
+	float: left;
+}

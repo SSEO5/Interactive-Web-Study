@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* line-height : 줄 간격 */
+/* text-align : 텍스트 정렬 방향 */
+/* letter-spacing : 텍스트 자간 */
+.text1 {
+	font-size: 20px;
+	line-height: 40px;
+	border: 1px solid red;
+	text-align: right;
+	letter-spacing: -2px;
+}
+.text2 {
+	font-size: 20px;
+	line-height: 1.5;
+	border: 1px solid blue;
+	text-align: justify;
+}
