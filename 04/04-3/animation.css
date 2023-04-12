@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 애니메이션 세트 지정 */
+@keyframes rotation {
+	/* 시작 지점 */
+	0% {
+		transform: rotate(0deg);
+	}
+	/* 끝 지점 */
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+article {
+	width: 400px;
+	height: 400px;
+	background: blue;
+	margin: 100px auto;
+	/* @keyframes로 등록한 모션 이름을 호출 */
+	animation-name: rotation;
+	/* 지속 시간(초 단위) */
+	animation-duration: 2s;
+	/* 가속도 */
+	animation-timing-function: linear;
+	/* 반복 횟수 */
+	animation-iteration-count: infinite;
+	/* 지연 시간(초 단위) */
+	animation-delay: 0s;
+	/* 동작 상태 지정 (running or paused) */
+	animation-play-state: running;
+	/* 요소 회전 */
+	transform: rotate(50deg);
+
+	/* animation 축약문 */
+	/* animation: 이름 진행시간 가속도 지연시간 반복횟수 */
+}
+
+/* 마우스 커서를 올리면 일시 정지 */
+article:hover {
+	animation-play-state: paused;
+}

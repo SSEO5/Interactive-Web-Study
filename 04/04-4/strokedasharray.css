@@ -1,0 +1,28 @@
+/* 마우스 포인터를 올리면 선이 그려지는 모션 만들기 */
+
+@charset "utf-8";
+
+article {
+	width: 500px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	padding: 50px;
+	margin: 50px auto;
+}
+article svg {
+	width: 100%;
+}
+article svg path {
+	fill: transparent;
+	stroke: red;
+	stroke-width: 2;
+	/* 개발자 도구 - Elements - path 에서 속성값 확인 */
+	/* 선의 간격을 띄는 속성 */
+	stroke-dasharray: 1420;
+	/* 가시 영역에 보이는 선의 시작 위치를 지정하는 속성 */
+	stroke-dashoffset: -1420;
+	transition: all 3s;
+}
+article:hover svg path {
+	stroke-dashoffset: 0;
+}

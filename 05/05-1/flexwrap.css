@@ -1,0 +1,32 @@
+/* flex-wrap : 자식 요소에 줄바꿈 적용하기 */
+
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+main {
+	width: 100%;
+	height: 100vh;
+	background: lightcyan;
+}
+
+section article {
+	width: 100px;
+	height: 100px;
+	background: aqua;
+	border: 1px solid #000;
+}
+
+section {
+	width: 100%;
+	border: 10px solid blue;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	/* flex-flow : flex-direction, flex-wrap 한꺼번에 적용 */
+	/* flex-flow: row wrap; */
+}
