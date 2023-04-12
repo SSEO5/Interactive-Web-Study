@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* 901px 이상이면 pink */
+article {
+	width: 200px;
+	height: 200px;
+	background: pink;
+	margin: 100px auto;
+}
+
+/* 웹 브라우저의 폭이 900px 이하일 때 우선 적용 */
+@media screen and (max-width: 900px) {
+	article {
+		background: orange;
+	}
+}
+
+/* 웹 브라우저의 폭이 400px 이하일 때 우선 적용 */
+@media screen and (max-width: 400px) {
+	article {
+		background: aqua;
+	}
+}

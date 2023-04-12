@@ -1,0 +1,27 @@
+/* flex-direction : 자식 요소의 정렬 방향 변경하기 */
+
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+main {
+	width: 100%;
+	height: 100vh;
+	background: lightcyan;
+}
+
+section article {
+	width: 100px;
+	height: 100px;
+	background: aqua;
+	border: 1px solid #000;
+}
+
+section {
+	border: 10px solid blue;
+	display: inline-flex;
+	/* 요소의 정렬 방향 지정 */
+	flex-direction: column;
+}

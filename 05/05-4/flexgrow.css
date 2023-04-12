@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+section {
+	width: 100%;
+	background: lightcyan;
+	display: flex;
+}
+
+/* 자식 요소에 크기를 따로 입력하지 않으면 */
+/* 자식 요소는 inlie-block으로 설정되어 요소 영역이 텍스트의 크기만큼 설정됨 */
+/* section article {
+	background: aqua;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	font-size: 50px;
+	color: #fff;
+	display: flex;
+} */
+
+/* flex-grow : 요소의 안쪽 여백 확대하기 */
+/* 요소의 여백 비율 확대하기 */
+/* section article:nth-of-type(1) {
+	flex-grow: 1;
+}
+section article:nth-of-type(2) {
+	flex-grow: 1;
+}
+section article:nth-of-type(3) {
+	flex-grow: 1;
+} */
+
+/* 요소마다 여백 비율을 다르게 확대하기 */
+section article:nth-of-type(1) {
+	flex-grow: 1;
+}
+section article:nth-of-type(2) {
+	flex-grow: 2;
+}
+section article:nth-of-type(3) {
+	flex-grow: 3;
+}
+
+/* flex-grow 속성값이 0이면 원래 크기가 됨 */
