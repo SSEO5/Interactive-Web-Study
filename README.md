@@ -1,4 +1,4 @@
-# 23-spring-interactive-web
+# 23-spring-interactive-web-study
 최성일 <Do it! 인터랙티브 웹 페이지 만들기>
 
 ---
