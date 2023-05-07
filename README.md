@@ -19,7 +19,10 @@
 
 ## 5주차
 07. 온라인 프로필 카드 제작하기
+<img width="800" src="https://user-images.githubusercontent.com/97823296/236687916-ee749acc-6cd8-4c02-a724-3be778f22517.png">
+
 08. 기업형 웹 페이지 제작하기
+<img width="800" src="https://user-images.githubusercontent.com/97823296/236687914-3c5210b6-c172-44b3-a86b-17f9f61408d7.png">
 
 ## 6주차
 09. 마을 애니메이션 제작하기
