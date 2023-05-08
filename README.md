@@ -26,6 +26,7 @@
 
 ## 6주차
 09. 마을 애니메이션 제작하기
+<img width="800" src="https://user-images.githubusercontent.com/97823296/236745520-8753e835-e6a7-44c6-bed2-5ce4280de09f.gif">
 
 ## 7주차
 10. 파노라마 회사 소개 페이지 제작하기
