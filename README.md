@@ -30,9 +30,11 @@
 
 ## 7주차
 10. 파노라마 회사 소개 페이지 제작하기
+<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/6bc52748-a118-4d57-8cee-1a0f571e481b.gif">
 
 ## 8주차
 11. flex 기반 동영상 웹 페이지 제작하기
+<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/b6efc531-26fa-4298-858a-7dbb184c341c.gif">
 
 ## 9주차
 12. 뮤직 플레이어 제작하기
