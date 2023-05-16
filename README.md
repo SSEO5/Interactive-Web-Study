@@ -30,14 +30,16 @@
 
 ## 7주차
 10. 파노라마 회사 소개 페이지 제작하기
-<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/6bc52748-a118-4d57-8cee-1a0f571e481b.gif">
+<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/6bc52748-a118-4d57-8cee-1a0f571e481b">
 
 ## 8주차
 11. flex 기반 동영상 웹 페이지 제작하기
-<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/b6efc531-26fa-4298-858a-7dbb184c341c.gif">
+<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/b6efc531-26fa-4298-858a-7dbb184c341c">
 
 ## 9주차
 12. 뮤직 플레이어 제작하기
+<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/c473f08c-03d4-40f3-a9e3-2d0a0a8e3eea">
 
 ## 10주차
 13. 핀터레스트 스타일의 반응형 웹 갤러리 제작하기
+<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/5161620a-8774-479c-a8e4-8f83f1555d27">
