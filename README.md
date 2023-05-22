@@ -21,6 +21,8 @@
 07. 온라인 프로필 카드 제작하기
 <img width="800" src="https://user-images.githubusercontent.com/97823296/236687916-ee749acc-6cd8-4c02-a724-3be778f22517.png">
 
+##
+
 08. 기업형 웹 페이지 제작하기
 <img width="800" src="https://user-images.githubusercontent.com/97823296/236687914-3c5210b6-c172-44b3-a86b-17f9f61408d7.png">
 
@@ -43,3 +45,9 @@
 ## 10주차
 13. 핀터레스트 스타일의 반응형 웹 갤러리 제작하기
 <img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/5161620a-8774-479c-a8e4-8f83f1555d27">
+
+##
+
+[특별 부록] 스와이프 갤러리 제작하기
+<img width="800" src="https://github.com/SSEO5/Interactive-Web-Study/assets/97823296/fd14373f-263c-43ab-a1c7-6b3a47ee22a3">
+
