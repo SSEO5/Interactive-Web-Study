@@ -1,0 +1,161 @@
+<!-- Swiper.js 플러그인으로 스와이프 이벤트가 연결된 갤러리 제작하기 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>스와이프 갤러리</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/7ae3a6a91c.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- 로고 -->
+			<h1>UI/UX <span>PORTFOLIO</span></h1>
+
+			<!-- 자동 재생, 정지 버튼 -->
+			<ul class="auto">
+				<li class="btnStart"><i class="fas fa-play"></i></li>
+				<li class="btnStop"><i class="fas fa-pause"></i></li>
+			</ul>
+
+			<!-- 슬라이드 그룹 -->
+			<div class="swiper-wrapper">
+				<!-- 개별 슬라이드 5개-->
+				<div class="swiper-slide">
+					<div class="inner">
+						<div class="con">
+							<img src="img/pic1.png" />
+							<h2>Ipsum dolor sit amet.</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Qui, optio.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="inner">
+						<div class="con">
+							<img src="img/pic2.png" />
+							<h2>Lorem ipsum dolor.</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Obcaecati eum doloribus
+								voluptate officiis excepturi!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="inner">
+						<div class="con">
+							<img src="img/pic3.png" />
+							<h2>Dolor ipsum sit.</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Eligendi officiis iste nam
+								quae.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="inner">
+						<div class="con">
+							<img src="img/pic4.png" />
+							<h2>Consectetur adicing.</h2>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur
+								adipisicing elit. Velit optio debitis sapiente!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="inner">
+						<div class="con">
+							<img src="img/pic5.png" />
+							<h2>Dicta! elit.</h2>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur
+								adipisicing elit. Eos, accusantium corrupti.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 좌우 버튼 -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
+			<!-- 페이지 메뉴 -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<script>
+			const swiper = new Swiper(".wrap", {
+				// 프레임의 요소명
+				direction: "horizontal", // 스와이프 방향
+				loop: true, // 순환 여부
+				pagination: {
+					el: ".swiper-pagination", // 페이지 메뉴 요소명
+					type: "fraction", // 페이지 버튼 대신 슬라이더 번호 출력
+				},
+				navigation: {
+					nextEl: ".swiper-button-next", // 다음 버튼 요소명
+					prevEl: ".swiper-button-prev", // 이전 버튼 요소명
+				},
+				spaceBetween: 0, // 패널 사이의 간격
+				slidesPerView: "auto", // css에 지정한 슬라이더의 크기를 반영
+				grabCursor: true, // 스와이프 시 마우스 포인터 모양 변경
+				centeredSlides: true, // 슬라이더 패널을 항상 가운데로 정렬
+				speed: 1000, // 슬라이더 이동 속도 지정
+				effect: "coverflow", // coverflow 이펙트 효과 지정
+				coverflowEffect: {
+					rotate: 50, // 회전 각도 지정
+					stretch: -100, // 슬라이드 간의 당김 정도 지정
+					depth: 400, // 원근감 지정
+					modifier: 1, // 중첩 정도 지정
+					slideShadows: false, // 그림자 효과 제거
+				},
+				autoplay: {
+					delay: 1000, // 1초마다 슬라이드를 자동으로 넘김
+
+					// 자동 재생하다가 사용자가 좌우 버튼을 클릭하거나 스와이프를 하면 자동 재생 기능을 중지함
+					disableOnInteraction: true,
+				},
+			});
+
+			// .btnStart 요소를 찾아서 btnStart에 저장
+			const btnStart = document.querySelector(".btnStart");
+			// .btnStop 요소를 찾아서 btnStop에 저장
+			const btnStop = document.querySelector(".btnStop");
+
+			//btnStart 버튼을 클릭하면 자동 스와이프를 시작
+			btnStart.addEventListener("click", () => {
+				swiper.autoplay.start();
+			});
+
+			//btnStop 버튼을 클릭하면 자동 스와이프를 정지
+			btnStop.addEventListener("click", () => {
+				swiper.autoplay.stop();
+			});
+		</script>
+	</body>
+</html>
